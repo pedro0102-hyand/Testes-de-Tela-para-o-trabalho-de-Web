@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Camisas - Rural Sports</title>
+  <title>Acessórios - Rural Sports</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="../styles/home.css">
-  <link rel="stylesheet" href="../styles/shirts.css">
+  <link rel="stylesheet" href="../styles/accessories.css">
 </head>
 <body class="bg-gray-100">
 
@@ -24,12 +23,12 @@
       <div class="hidden md:flex space-x-8">
         <a href="home.html" class="text-gray-600 hover:text-yellow-600 transition-colors duration-300 font-medium">Início</a>
         <a href="camisas.html" class="text-gray-600 hover:text-yellow-600 transition-colors duration-300 font-medium">Camisas</a>
-        <a href="acessorios.html" class="text-gray-600 hover:text-yellow-600 transition-colors duration-300 font-medium">Acessórios</a>
-        <a href="#" class="text-gray-600 hover:text-yellow-600 transition-colors duration-300 font-medium">Sobre Nós</a>
+        <a href="accessories.html" class="text-gray-600 hover:text-yellow-600 transition-colors duration-300 font-medium">Acessórios</a>
+        <a href="about.html" class="text-gray-600 hover:text-yellow-600 transition-colors duration-300 font-medium">Sobre Nós</a>
       </div>
       
-      <!-- Ícones de Ação -->
-      <div class="flex items-center space-x-6">
+     <!-- Ícones de Ação -->
+     <div class="flex items-center space-x-6">
         <button class="text-gray-600 hover:text-yellow-600 transition-colors duration-300 focus:outline-none">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -50,67 +49,40 @@
     </nav>
   </header>
 
-  <!-- Seção de Camisas -->
-  <section id="shirts-section" class="py-16 md:py-24">
+  <!-- Seção de Destaque -->
+  <section class="hero-gradient text-white py-20 md:py-32 text-center">
     <div class="container mx-auto px-6">
-      <h1 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Nossas Camisas Oficiais</h1>
+      <h1 class="text-4xl md:text-6xl font-extrabold mb-4">Acessórios para Torcedores Raiz</h1>
+      <p class="text-xl md:text-2xl font-light mb-8 max-w-2xl mx-auto">
+        Canecas, bonés e outros itens essenciais para mostrar sua paixão pelo time.
+      </p>
+    </div>
+  </section>
+
+  <!-- Seção de Produtos -->
+  <section id="products-section" class="py-16 md:py-24">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Nossos Acessórios</h2>
       
       <!-- Grid de Produtos -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-        <!-- Card de Produto 1: Camisa Real Madrid -->
+      <div class="grid grid-cols-1 gap-8 max-w-sm mx-auto">
+        <!-- Card de Produto: Boné do Man City -->
         <div class="bg-white rounded-xl shadow-lg overflow-hidden product-card">
-          <img src="https://placehold.co/600x400/003366/ffffff?text=Real+Madrid" alt="" class="w-full h-48 object-cover">
+          <img src="https://placehold.co/600x400/87CEEB/000000?text=Bon%C3%A9+Man+City" alt="Caneca do Manchester City" class="w-full h-48 object-cover">
           <div class="p-6">
-            <h3 class="text-lg font-semibold text-gray-800 mb-1">Camisa Real Madrid 23/24</h3>
-            <p class="text-green-600 font-bold text-xl mb-4">R$ 350,00</p>
+            <h3 class="text-lg font-semibold text-gray-800 mb-1">Caneca Oficial Manchester City</h3>
+            <p class="text-green-600 font-bold text-xl mb-4">R$ 45,00</p>
             <button class="w-full bg-[#ffcc00] hover:bg-[#e6b800] text-gray-900 font-bold py-2 px-4 rounded-full transition-colors duration-300 add-to-cart">
               Adicionar ao Carrinho
             </button>
           </div>
         </div>
-        
-        <!-- Card de Produto 2: Camisa Fluminense -->
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden product-card">
-          <img src="https://placehold.co/600x400/6b071e/ffffff?text=Fluminense" alt="" class="w-full h-48 object-cover">
-          <div class="p-6">
-            <h3 class="text-lg font-semibold text-gray-800 mb-1">Camisa Fluminense 23/24</h3>
-            <p class="text-green-600 font-bold text-xl mb-4">R$ 280,00</p>
-            <button class="w-full bg-[#ffcc00] hover:bg-[#e6b800] text-gray-900 font-bold py-2 px-4 rounded-full transition-colors duration-300 add-to-cart">
-              Adicionar ao Carrinho
-            </button>
-          </div>
-        </div>
-        
-        <!-- Card de Produto 3: Camisa PSG -->
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden product-card">
-          <img src="https://placehold.co/600x400/1e293b/ffffff?text=PSG" alt="" class="w-full h-48 object-cover">
-          <div class="p-6">
-            <h3 class="text-lg font-semibold text-gray-800 mb-1">Camisa Paris SG 23/24</h3>
-            <p class="text-green-600 font-bold text-xl mb-4">R$ 320,00</p>
-            <button class="w-full bg-[#ffcc00] hover:bg-[#e6b800] text-gray-900 font-bold py-2 px-4 rounded-full transition-colors duration-300 add-to-cart">
-              Adicionar ao Carrinho
-            </button>
-          </div>
-        </div>
-
-        <!-- Card de Produto 4: Camisa Inter de Milão -->
-        <div class="bg-white rounded-xl shadow-lg overflow-hidden product-card">
-          <img src="https://placehold.co/600x400/003366/ffffff?text=Inter+de+Milao" alt="" class="w-full h-48 object-cover">
-          <div class="p-6">
-            <h3 class="text-lg font-semibold text-gray-800 mb-1">Camisa Inter de Milão 23/24</h3>
-            <p class="text-green-600 font-bold text-xl mb-4">R$ 300,00</p>
-            <button class="w-full bg-[#ffcc00] hover:bg-[#e6b800] text-gray-900 font-bold py-2 px-4 rounded-full transition-colors duration-300 add-to-cart">
-              Adicionar ao Carrinho
-            </button>
-          </div>
-        </div>
-        
       </div>
     </div>
   </section>
 
   <!-- Rodapé -->
-  <footer class="bg-gray-800 text-gray-300 py-12 mt-12">
+  <footer class="bg-gray-800 text-gray-300 py-12">
     <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
       <div>
         <h4 class="text-lg font-bold mb-4 text-white">Rural Sports</h4>
@@ -124,7 +96,7 @@
         <ul class="space-y-2">
           <li><a href="home.html" class="hover:text-yellow-400 transition-colors duration-300">Início</a></li>
           <li><a href="camisas.html" class="hover:text-yellow-400 transition-colors duration-300">Camisas</a></li>
-          <li><a href="#" class="hover:text-yellow-400 transition-colors duration-300">Acessórios</a></li>
+          <li><a href="accessorios.html" class="hover:text-yellow-400 transition-colors duration-300">Acessórios</a></li>
         </ul>
       </div>
 
@@ -155,6 +127,6 @@
     </div>
   </footer>
 
-  <script src="../src/home.js"></script>
+  <script src="../src/accessories.js"></script>
 </body>
 </html>
