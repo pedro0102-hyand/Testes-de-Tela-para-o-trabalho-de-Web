@@ -1,0 +1,112 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Estilo para as opções de pagamento */
+.payment-option {
+    margin-bottom: 1rem;
+}
+
+.payment-card {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.payment-card:hover {
+    border-color: #ffcc00;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Quando uma opção de pagamento está selecionada */
+input[type="radio"]:checked + label .payment-card {
+    border-color: #ffcc00;
+    background-color: #fffbf0;
+    box-shadow: 0 4px 12px rgba(255, 204, 0, 0.2);
+}
+
+/* Estilo para os inputs */
+input:focus,
+select:focus {
+    outline: none;
+    ring: 2px;
+    ring-color: #ffcc00;
+    border-color: transparent;
+}
+
+/* Animação para a notificação */
+#notification-message {
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Estilo para o resumo do pedido */
+.order-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    background-color: #f9fafb;
+}
+
+.order-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 1rem;
+}
+
+.order-item-info {
+    flex: 1;
+}
+
+.order-item-name {
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 0.25rem;
+}
+
+.order-item-price {
+    color: #059669;
+    font-weight: 700;
+}
+
+.order-item-quantity {
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .payment-card {
+        padding: 0.75rem;
+    }
+    
+    .order-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .order-item img {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Estilo para campos obrigatórios */
+input[required]:invalid {
+    border-color: #ef4444;
+}
+
+input[required]:valid {
+    border-color: #10b981;
+}
+
+/* Animação para o botão de finalizar */
+#finalizar-pedido:hover:not(:disabled) {
+    transform: scale(1.05);
+    box-shadow:
