@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro - Rural Sports</title>
+  <link rel="stylesheet" href="../style/cadastro.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Lado esquerdo com a imagem -->
+    <div class="left"></div>
+
+    <!-- Lado direito com o formulário -->
+    <div class="right">
+      <div class="form-box">
+        <h1>Junte-se à Rural-Sports</h1>
+        <p>Crie sua conta e faça parte da nossa comunidade</p>
+        
+        <!-- Mensagem de notificação -->
+        <div id="notification-message" class="notification hidden">
+          <span id="notification-text"></span>
+        </div>
+        
+        <form id="registerForm">
+          <div class="form-row">
+            <input type="text" id="firstName" placeholder="Nome" required>
+            <input type="text" id="lastName" placeholder="Sobrenome" required>
+          </div>
+          
+          <input type="email" id="email" placeholder="E-mail" required>
+          <input type="text" id="cpf" placeholder="CPF" required>
+          <input type="tel" id="phone" placeholder="Telefone" required>
+          <input type="date" id="birthDate" placeholder="Data de Nascimento" required>
+          
+          <div class="form-row">
+            <input type="text" id="cep" placeholder="CEP" required>
+            <input type="text" id="numero" placeholder="Número" required>
+          </div>
+          
+          <input type="text" id="rua" placeholder="Rua" readonly>
+          <input type="text" id="bairro" placeholder="Bairro" readonly>
+          <input type="text" id="cidade" placeholder="Cidade" readonly>
+          <input type="text" id="complemento" placeholder="Complemento (opcional)">
+          
+          <input type="text" id="username" placeholder="Nome de usuário" required>
+          <input type="password" id="password" placeholder="Senha" required>
+          <input type="password" id="confirmPassword" placeholder="Confirmar senha" required>
+          
+          <div class="terms-checkbox">
+            <input type="checkbox" id="terms" required>
+            <label for="terms">
+              Aceito os <a href="#" class="terms-link">termos de uso</a> e 
+              <a href="#" class="terms-link">política de privacidade</a>
+            </label>
+          </div>
+          
+          <button type="submit">Criar Conta</button>
+        </form>
+        
+        <!-- Link para login -->
+        <div class="login-link">
+          <p>Já tem uma conta?</p>
+          <a href="login.html">Faça seu login</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../src/cadastro.js"></script>
+</body>
+</html>
